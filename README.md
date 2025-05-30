@@ -34,7 +34,7 @@ Projede genel olarak aşağıdaki adımlar izlenmiştir:
 
     Veri setinden rastgele veya ilk birkaç örneği görselleştirmek, veriyi anlamak açısından önemlidir. Aşağıda veri setindeki ilk 5 görsel örneği görülebilir:
 
-    ![İlk 5 Görsel Örneği]()
+    ![İlk 5 Görsel Örneği](ilk5görsel.png)
 
 2.  **Veri Dengeleme:**
     - HAM10000 veri setindeki sınıflar arasında örnek sayısı açısından önemli dengesizlikler bulunmaktadır. Bu dengesizlik, modelin çoğunluk sınıflarına bias'lı olmasına neden olabilir.
@@ -42,7 +42,11 @@ Projede genel olarak aşağıdaki adımlar izlenmiştir:
 
     Aşağıdaki grafik, veri dengeleme işlemi öncesi ve sonrası sınıf dağılımını göstermektedir:
 
-    ![RandomOverSampler veya SMOTE Sonrası Sınıf Dağılımı]()
+    <p float="left">
+      <img src="once.png" width="45%" />
+      <img src="sonra.png" width="45%" />
+    </p>
+
 
 3.  **Model Mimarisi:**
     - Projede, basit ama etkili bir derin öğrenme modeli olan çok katmanlı bir Yapay Sinir Ağı (Dense Network) kullanılmıştır. Model Sequential API ile oluşturulmuştur.
@@ -59,7 +63,7 @@ Projede genel olarak aşağıdaki adımlar izlenmiştir:
 
     Aşağıdaki grafikler, eğitim süresince modelin eğitim ve doğrulama veri setleri üzerindeki kaybını ve doğruluğunu göstermektedir:
 
-    ![Eğitim ve Doğrulama Grafikleri]()
+    ![Eğitim ve Doğrulama Grafikleri](egitimgrafikleri.png)
 
 5.  **Model Değerlendirmesi:**
     - Eğitilmiş modelin gerçek dünya performansı hakkında fikir edinmek için, eğitimde hiç görülmemiş ayrı bir test veri seti üzerinde değerlendirmesi yapılır.
@@ -70,7 +74,7 @@ Projede genel olarak aşağıdaki adımlar izlenmiştir:
 
     Aşağıda modelin test veri seti üzerindeki Karışıklık Matrisi görülmektedir:
 
-    ![Karışıklık Matrisi]()
+    ![Karışıklık Matrisi](karışıklıkmatrisi.png)
 
     Ve modelin test veri seti üzerindeki Sınıflandırma Raporu çıktısı:
 
@@ -84,7 +88,7 @@ Projede genel olarak aşağıdaki adımlar izlenmiştir:
 
     Aşağıda test setinden seçilmiş örnek görüntüler ve modelin bunlara ait tahminleri gösterilmektedir:
 
-    ![Örnek Tahmin Görselleri]()
+    ![Örnek Tahmin Görselleri](sonuctahmini.png)
 
 ## Kullanım
 
@@ -119,15 +123,3 @@ Projeyi kendi ortamınızda çalıştırmak için aşağıdaki adımları izleye
 - Scikit-learn (`sklearn`)
 - Imbalanced-learn (`imblearn`)
 - Kaggle API (veri setini indirmek için)
-
-## Katkıda Bulunma
-
-Katkılarınızı bekliyoruz! Lütfen pull request göndermeden önce değişikliklerinizi açıklayan bir issue açınız.
-
-## Lisans
-
-Bu proje MIT Lisansı altındadır. Detaylar için `LICENSE` dosyasına bakınız. (Eğer bir lisans dosyası ekleyecekseniz bu kısmı tutabilirsiniz.)
-
-## İletişim
-
-Sorularınız veya önerileriniz için lütfen iletişime geçin: [E-posta Adresiniz veya GitHub Profiliniz]
